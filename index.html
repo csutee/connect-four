@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Sós Márk - SXM2H2</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+
+        <div id="indexField">
+
+            <h4 id="topText">Connect-Four</h4>
+
+            <label for="firstPlayerName">🔴 1. játékos neve: </label>
+            <input type="text" class="form-control" id="firstPlayerName" placeholder="1. játékos">
+            <br>
+            <label for="secondPlayerName">🟡 2. játékos neve: </label>
+            <input type="text" class="form-control" id="secondPlayerName" placeholder="2. játékos">
+
+            <br>
+            <div class="btn-group">
+                <button type="button" id="startButton" class="btn btn-success">Start</button>
+                <a href="https://hu.wikipedia.org/wiki/Connect_four"><button type="button" id="rulesButton" class="btn btn-primary">Szabályok</button></a>
+            </div>
+        </div>
+
+        <div id="gameField" style="display: none">
+            <h1 id="actualPlayer">Aktuális játékos: <span id="actualPlayerName"></span></h1>
+            
+        </div>
+
+        <div id="stats">
+            <h4 id="topText">Statisztika</h4>
+            <ul id="statList">
+                
+            </ul>
+            
+        </div>
+
+    </body>
+    <script src="scripts/game.js"></script>
+
+</html>
